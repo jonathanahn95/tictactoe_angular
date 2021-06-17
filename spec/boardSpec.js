@@ -124,7 +124,7 @@ describe('the Board class -', () => {
             mockBoard = ['X', 'X', 'X', 'O', null, null, null, 'O', null]
             board.board = mockBoard;
 
-            expect(board.hasWinner()).toBe(true)
+            expect(board.hasWinner()).toBe('X')
         });
 
         it('should return false if there is no winner', () => {

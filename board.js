@@ -1,9 +1,7 @@
 class Board { 
     constructor() { 
-        this.board = [
-            null, null, null,
-            null, null, null,
-            null, null, null
+        this.board = [ 
+            null, null, null, null, null, null, null, null, null
         ]
     }
 
@@ -77,7 +75,7 @@ class Board {
         for (let i = 0; i < moves.length; i++) {
             const [a,b,c] = moves[i];
             if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-                return true
+                return board[a]
             }
         }
 

@@ -10,7 +10,7 @@ describe('the Game class - ', () => {
         game = new Game();
         board = new Board();
         hp = new HumanPlayer('X', board);
-        cp = new ComputerPlayer('O');
+        cp = new ComputerPlayer('O', board);
     });
 
     describe('the constructor', () => {
