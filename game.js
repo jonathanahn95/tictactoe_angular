@@ -33,6 +33,7 @@ class Game {
                 this.hp.makeMove(input, "X")
 
                 if (this.board.isTied() || this.board.hasWinner()) { 
+                    this.board.renderBoard();
                     rl.close() 
                 } else { 
                     this.board.renderBoard();
@@ -43,6 +44,7 @@ class Game {
         } else { 
             rl.write(this.cp.makeBestMove())
             if (this.board.isTied() || this.board.hasWinner()) { 
+                this.board.renderBoard();
                 rl.close() 
             } else { 
                 this.board.renderBoard();
